@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zeynep Berin Kaplan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">ZBK</a>
+                <h1>Welcome to My Professional Portfolio</h1>
+            </div>
+            
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm Zeynep Berin Kaplan, currently pursuing my studies in Electrical and Electronics Engineering at Hacettepe University.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/john-doe/Hw1-Q2" target="_blank">Hw1-Q2</a></li>
+                <li><a href="https://github.com/john-doe/Hw1-Q3" target="_blank">Hw1-Q3</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: zeynepberinkaplan@gmail.com</p>
+            <p>Email2: zeynep-kaplan@hacettepe.edu.tr</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Zeynep Berin Kaplan</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+<style>
+/* Google Fonts'u başta ekle */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Box modelini düzgün yönetmek için */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container'ı ekran boyutuna uygun yap */
+.container {
+    width: 100%;
+    min-height: 100vh;  /* Yükseklik ekran boyutunda olsun */
+    display: flex;
+    flex-direction: column;  /* İçerik dikey olarak sıralanacak */
+}
+
+/* Navbar düzeni */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: rgba(43, 2, 2, 0.979);
+    display: flex;
+    justify-content: center;  /* İçeriği yatayda ortala */
+    align-items: center;  /* İçeriği dikeyde ortala */
+    padding: 0 20px;  /* Kenarlara padding ekleyerek içerik sıkışmasını önle */
+}
+
+.navbar h1 {
+    color: #ce95b6;
+    font-size: 24px;
+    text-align: center;  /* Başlık ortalanacak */
+    flex-grow: 1;  /* H1'in mümkün olduğunca genişlemesini engeller */
+}
+
+.navbar .logo {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(203, 204, 123);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(252, 252, 252);
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    background-color: #ee89c486;
+    color: white;
+    padding: 10px;
+}
+
+/* Duyarlı tasarım için Media Queries */
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 20px;  /* Küçük ekranlarda başlık boyutunu küçült */
+    }
+
+    .navbar .logo {
+        left: 10px;  /* Logo konumunu daha küçük ekranlara göre ayarla */
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 18px;  /* Çok küçük ekranlarda başlık boyutunu daha da küçült */
+    }
+
+    .navbar .logo a {
+        font-size: 24px;
+    }
+
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
+</style>
